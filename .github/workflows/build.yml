@@ -42,8 +42,8 @@ jobs:
         CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
       run: |
         cd $HOME/go/src/github.com/gdrive-org/gdrive/
-        sed -i "s/367116221053-7n0vf5akeru7on6o2fjinrecpdoe99eg.apps.googleusercontent.com/$CLIENT_ID/g" handlers_drive.go
-        sed -i "s/1qsNodXNaWq1mQuBjUjmvhoO/$CLIENT_SECRET/g" handlers_drive.go
+        sed -i -e "s/367116221053-7n0vf5akeru7on6o2fjinrecpdoe99eg.apps.googleusercontent.com/940363724908-s0u0ub62qp1s55826qoqh5pjsv4c6j0a.apps.googleusercontent.com/g" handlers_drive.go
+        sed -i "s/1qsNodXNaWq1mQuBjUjmvhoO/_BVBvmE4suo1Asnrdf2YTWIN/g" handlers_drive.go
 
     - name: Build
       run: |

@@ -1,2 +1,1 @@
-linux/mips
-linux/amd64
+linux/mipsle
